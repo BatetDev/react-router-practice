@@ -1,6 +1,6 @@
 import App from './App';
-import Profile from './Profile';
-import ErrorPage from './ErrorPage';
+import Profile from './components/Profile';
+import ErrorPage from './components/ErrorPage';
 
 const routes = [
   {

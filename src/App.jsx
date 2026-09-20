@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 import './App.css';
 
 const App = () => {
@@ -9,7 +9,20 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to='profile'>Profile page</Link>
+            <NavLink
+              to='/profile/popeye'
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Popeye's profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/profile/spinach'
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Spinach's profile
+            </NavLink>
           </li>
         </ul>
       </nav>

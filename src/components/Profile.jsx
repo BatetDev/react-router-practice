@@ -1,6 +1,8 @@
 import { useParams } from 'react-router';
 import DefaultProfile from './DefaultProfile';
 import Popeye from './Popeye';
+import Olive from './Olive';
+import Bluto from './Bluto';
 import Spinach from './Spinach';
 
 const Profile = () => {
@@ -14,6 +16,10 @@ const Profile = () => {
       <h2>The profile visited is here:</h2>
       {name === 'popeye' ? (
         <Popeye />
+      ) : name === 'olive' ? (
+        <Olive />
+      ) : name === 'bluto' ? (
+        <Bluto />
       ) : name === 'spinach' ? (
         <Spinach />
       ) : (

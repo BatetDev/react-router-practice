@@ -23,6 +23,22 @@ const Layout = () => {
           </li>
           <li>
             <NavLink
+              to='/profile/olive'
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Olive's profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/profile/bluto'
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              Bluto's profile
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to='/profile/spinach'
               className={({ isActive }) => (isActive ? 'active' : '')}
             >

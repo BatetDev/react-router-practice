@@ -1,16 +1,23 @@
 import App from './App';
+import Layout from './components/Layout';
 import Profile from './components/Profile';
 import ErrorPage from './components/ErrorPage';
 
 const routes = [
   {
     path: '/',
-    element: <App />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: 'profile/:name',
-    element: <Profile />,
+    children: [
+      {
+        index: true,
+        element: <App />,
+      },
+      {
+        path: 'profile/:name',
+        element: <Profile />,
+      },
+    ],
   },
 ];
 

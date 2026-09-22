@@ -17,6 +17,10 @@ const routes = [
         path: 'profile/:name',
         element: <Profile />,
       },
+      {
+        path: '*',
+        element: <ErrorPage />,
+      },
     ],
   },
 ];
